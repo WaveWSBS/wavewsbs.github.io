@@ -3,7 +3,42 @@
 <title> Welcome 2 Waveland </title>
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
-<body>
+<body class="light sans-serif loaded" style="--font-size:20px; --content-width:30em;">
+<div id="toolbar" class="toolbar-container scrolled" style="">
+    <div class="toolbar reader-toolbar">
+      <div class="reader-controls" articledir="ltr">
+        <button class="close-button button " aria-label="关闭阅读模式"><span class="hover-label">关闭阅读模式</span></button>
+        <ul class="dropdown style-dropdown">
+          <li>
+            <button class="dropdown-toggle button style-button" aria-label="字型调控"><span class="hover-label">字型调控</span></button>
+          </li>
+          <li class="dropdown-popup">
+            <div class="dropdown-arrow"></div>
+            <div class="font-type-buttons radiorow"><input id="radio-itemsans-serif-button" type="radio" class="radio-button" name="font-type"><label for="radio-itemsans-serif-button" class="sans-serif-button" checked="true">无衬线</label><input id="radio-itemserif-button" type="radio" class="radio-button" name="font-type"><label for="radio-itemserif-button" class="serif-button">衬线</label></div>
+            <div class="font-size-buttons buttonrow">
+              <button class="minus-button" title="缩小文字"></button>
+              <span class="font-size-value">5</span>
+              <button class="plus-button" title="增大文字">
+            </button></div>
+            <div class="content-width-buttons buttonrow">
+               <button class="content-width-minus-button" title="缩小内容宽度"></button>
+               <span class="content-width-value">3</span>
+               <button class="content-width-plus-button" title="放大内容宽度">
+            </button></div>
+            <div class="line-height-buttons buttonrow">
+                <button class="line-height-minus-button" title="缩小行距"></button>
+                <span class="line-height-value">4</span>
+                <button class="line-height-plus-button" title="放大行距">
+            </button></div>
+            <div class="color-scheme-buttons radiorow"><input id="radio-itemlight-button" type="radio" class="radio-button" name="color-scheme"><label for="radio-itemlight-button" class="light-button" checked="true" title="亮色模式">亮色</label><input id="radio-itemdark-button" type="radio" class="radio-button" name="color-scheme"><label for="radio-itemdark-button" class="dark-button" title="暗色模式">暗色</label><input id="radio-itemsepia-button" type="radio" class="radio-button" name="color-scheme"><label for="radio-itemsepia-button" class="sepia-button" title="纸墨模式">纸墨</label></div>
+          </li>
+        </ul>
+      <ul class="dropdown narrate-dropdown"><li><button class="dropdown-toggle button narrate-toggle" aria-label="聆听"><span class="hover-label">聆听</span></button></li><li class="dropdown-popup"><div class="narrate-row narrate-control"><button class="narrate-skip-previous" title="后退" disabled=""></button><button class="narrate-start-stop" title="开始"></button><button class="narrate-skip-next" title="前进" disabled=""></button></div><div class="narrate-row narrate-rate"><input class="narrate-rate-input" value="0" step="5" max="100" min="-100" type="range" title="速度"></div><div class="narrate-row narrate-voices"><div class="voiceselect voice-select"><button class="select-toggle" aria-controls="voice-options">
+      <span class="label">语音：</span> <span class="current-voice">Microsoft David Desktop - English (United States)</span>
+    </button>
+    <div class="options" id="voice-options" role="listbox" style="max-height: 509px;"><button data-value="automatic" class="option" tabindex="-1" role="option">默认</button><button data-value="urn:moz-tts:sapi:Microsoft David Desktop - English (United States)?en-US" class="option selected" tabindex="-1" role="option" aria-selected="true">Microsoft David Desktop - English (United States)</button><button data-value="urn:moz-tts:sapi:Microsoft Zira Desktop - English (United States)?en-US" class="option" tabindex="-1" role="option">Microsoft Zira Desktop - English (United States)</button></div></div></div><div class="dropdown-arrow"></div></li></ul><button data-buttonid="pocket-button" class="button pocket-button" aria-label="保存到 Pocket" style="background-image: url(&quot;chrome://global/skin/reader/pocket.svg&quot;); background-size: 16px 16px;"><span class="hover-label">保存到 Pocket</span></button></div>
+    </div>
+  </div>
 <h1>Welcome to this wonderful blog！</h1>
 <br>
 <a name="Blog"> <b>Blog: </b> </a>
@@ -135,6 +170,8 @@ Slim, "chauvinist pig drove in this big, Lincoln town car!"<br>
 Well gotta go, almost at the bridge, haha big bro it's for you<br>
 Slim, this is for him and Frank Ocean, hope you can swim good!<br>
 Now say you hate homos again!<br>
+<p>2021/1/23/2228<br>
+hope this works<br>
 <hr>
  <div id="vcomments"></div>
     <script>
