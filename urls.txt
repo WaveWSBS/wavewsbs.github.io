@@ -1,1 +1,0 @@
-curl -H 'Content-Type:text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=www.waveland.cn&token=6pSolIN2JQ9pzvln"
